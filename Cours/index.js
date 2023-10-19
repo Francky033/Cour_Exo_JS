@@ -52,3 +52,92 @@ if(myBoolean2){
 }
 console.log('je suis a la fin de mon script')
 
+// Exercice 
+
+const bigNb1 = 100
+const bigNb2 = 400
+const resultComparison = bigNb1 > bigNb2
+if(resultComparison){
+    console.log(bigNb1)
+} else{
+    console.log(bigNb2)
+}
+
+// écrire la condition pour afficher le plus grand nombre
+
+//Exercice 2
+
+const firstname = "Olivier"
+// const firstname2 = "Hamid"
+// const firstname3 = "Pauline"
+
+if (firstname == "Hamid") {
+    console.log('bonjour mon cher ' + firstname)
+} else if (firstname == "Pauline") {
+    console.log('bonjour ma chère ' + firstname)
+} else {
+    console.log('bonjour ' + firstname + ', je ne connaissais pas ton prénom avant')
+}
+
+    // VARIABLES COMPLEXE : LES TABLEAUX (Array)
+
+    let arr1 = [3, 5, 12, 204.5, 'hello', false ,'wolrd']
+    let arrResult1 = `${arr1[4]} - ${arr1[6]}`
+
+    console.log(arrResult1)
+
+    // on teste le bolean du tableau
+
+    let arrResult2 
+
+    // if(arr1[5]){
+    //     arrResult2 = `${arr1[4]} - ${arr1[6]}`
+    // } else{
+    //     arrResult2 = arr1[1] + arr1[3]
+    // }
+
+    // Exrcice - changer la valeur de 204.5 en 1990 par soustraction de 14.5
+
+   arr1[3] -= 14.5
+
+    console.log(arr1)
+
+    // VARIABLES COMPLEXE : LES OBJETS
+
+    let obj1 = {
+        maPremierePropriete : 12,
+        maDexiemePropriete : 14,
+        prop3: 11,
+        prop9: 'hello'
+    }
+    
+    console.log(obj1.prop9)
+
+    //Exercice - construire une chaine de caractere : 'Je m'appele...j'ai ... et j'habite a...'
+
+    let indentity = {
+        firstname: 'Franck',
+        lastname: 'NGONG',
+        age: 35,
+        town:'Audenge'
+    }
+
+    console.log(
+        `je m'appele ${indentity.firstname} ${indentity.lastname} j'ai ${indentity.age}ans et j'habite a ${indentity.town}`
+    )
+
+
+    // Exercice2
+
+    let indentity2 = {
+        firstname: 'Franck',
+        lastname: 'NGONG',
+        age: 35,
+        town:'Audenge'
+    }
+
+    let arrIndentities = [indentity, indentity2]
+
+    arrIndentities[1].lastname
+
+
