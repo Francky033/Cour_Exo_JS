@@ -118,7 +118,7 @@ if (firstname == "Hamid") {
     let indentity = {
         firstname: 'Franck',
         lastname: 'NGONG',
-        age: 35,
+        age: 27,
         town:'Audenge'
     }
 
@@ -130,9 +130,9 @@ if (firstname == "Hamid") {
     // Exercice2
 
     let indentity2 = {
-        firstname: 'Franck',
-        lastname: 'NGONG',
-        age: 35,
+        firstname: 'Justine',
+        lastname: 'DUDEZ',
+        age: 25,
         town:'Audenge'
     }
 
