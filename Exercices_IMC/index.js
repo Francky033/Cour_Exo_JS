@@ -1,17 +1,20 @@
-// 1 on recupere la balise htlm et on la stocke dans une variable en js
+// 1 On récupère la balise html et on la stocke dans une variable en js
 const validationBtn = document.querySelector(".validation-btn")
-const inputs = document.querySelectorAll(".bmi-input")
-const resultIMC = document.querySelector(".bmi-value")
+const resultIMC = document.querySelector('.bmi-value')
+const inputs = document.querySelectorAll('.bmi-input')
 
-// 2 on declare un clic sir le bouton, a chaque fois que l'on clique, on exécute la fonction associé
+// 2 on déclare un click sur le bouton, à chaque fois qu'on clique, on exécute la fonction associéee
 validationBtn.addEventListener('click', onBtnClick)
 
 function onBtnClick() {
-    const imcResult = inputs[1].value/((inputs[0].value/100)**2)
-    console.log(imcResult)
-if (inputs[0].value<0 || inputs[1].value<0 ) {
-    
-    console.log(`Impossible de calculer votre IMC`)
+    const height = inputs[0].value / 100
+    const weight = inputs[1].value
+    // afficher dans la console l'IMC => poids en kg / taille en m ² ** 2
+
+    // vérifier les données utilisateur, pas de valeurs <= 0
+    const bmi = weight / height ** 2
+
+    resultIMC.textContent = bmi
 }
-}
+
 
